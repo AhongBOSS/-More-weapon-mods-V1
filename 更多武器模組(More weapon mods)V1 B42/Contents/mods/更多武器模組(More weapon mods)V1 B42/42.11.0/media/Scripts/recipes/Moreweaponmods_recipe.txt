@@ -1,0 +1,62 @@
+module Base
+{
+    craftRecipe MakeStoneSword
+    {
+        timedAction = Making,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Carpentry,
+        xpAward = Woodwork:50,
+        inputs
+        {
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 1 [Base.StoneSwordHead],
+            item 1 [Base.WoodenSwordHandle],
+            item 1 [Base.DuctTape],
+            item 5 [Base.Nails],
+
+        }
+        outputs
+        {
+            item 1 Base.StoneSword,
+        }
+    }
+
+    craftRecipe CraftWoodenSwordHandle
+    {
+        timedAction = Making,
+        Time = 30,
+        Tags = InHandCraft,
+        category = Carpentry,
+        xpAward = Woodwork:10,
+        inputs
+        {
+            item 1 tags[Saw] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 [Base.Plank],
+        }
+        outputs
+        {
+            item 1 Base.WoodenSwordHandle,
+        }
+
+    }
+    
+    craftRecipe CraftStoneSwordHead
+    {
+        timedAction = Making,
+        Time = 30,
+        Tags = InHandCraft,
+        category = Carpentry,
+        xpAward = Woodwork:10,
+        inputs
+        {
+            item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 [Base.Stone2],
+        }
+        outputs
+        {
+            item 1 Base.StoneSwordHead,
+        }
+
+    }
+}
