@@ -1,0 +1,29 @@
+module Base
+{
+    model StoneSword
+    {
+        mesh = Weapons/2Handed/StoneSword,
+        texture = Model_StoneSword,
+        attachment world
+        {
+            offset = 0.0000 -0.2500 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+
+    model StoneSwordHead
+    {
+        mesh = Material/StoneSwordHead,
+        texture = Model_StoneSwordHead,
+    }
+
+    model WoodenSwordHandle
+    {
+        mesh = Material/WoodenSwordHandle,
+        texture = Model_WoodenSwordHandle,
+    }
+
+
+
+
+}

@@ -1,0 +1,68 @@
+module Base
+{
+    item StoneSword
+    {
+        DisplayCategory = Weapon,                          
+        MaxRange = 1.25,
+        WeaponSprite = StoneSword.StoneSword,
+        MinAngle = 0.72,                                   
+        Type = Weapon,
+        MinimumSwingTime = 1.8,                            
+        KnockBackOnNoDeath = FALSE,                        
+        SwingAmountBeforeImpact = 0.02,
+        Categories = Improvised;Blunt,                     
+        ConditionLowerChanceOneIn = 15,                    
+        Weight = 1.5,                                      
+        SplatNumber = 1,
+        PushBackMod = 0.3,                                 
+        SubCategory = Swinging,
+        ConditionMax = 15,
+        MaxHitCount = 3,                                   
+        DoorDamage = 2,                                    
+        IdleAnim = Idle_Weapon2,
+        SwingAnim = Bat,
+        WeaponReloadType = baton,                          
+        DisplayName = Stone Sword,                         
+        MinRange = 0.61,
+        SwingTime = 2.0,                                   
+        HitAngleMod = -30,
+        KnockdownMod = 0.0,                                
+        SplatBloodOnNoDeath = FALSE,                       
+        Icon = StoneSwordicon,                             
+        RunAnim = Run_Weapon2,
+        TwoHandWeapon = TRUE,
+        BreakSound = LeadPipeBreak,                        
+        DoorHitSound = LeadPipeHit,                        
+        HitSound = LeadPipeHit,                            
+        HitFloorSound = LeadPipeHit,                       
+        SwingSound = LeadPipeSwing,                        
+        TreeDamage = 1,
+        CriticalChance = 20,                               
+        critDmgMultiplier = 2.2,                           
+        MinDamage = 1.2,                                   
+        MaxDamage = 1.8,                                   
+        BaseSpeed = 1.0,                                   
+        WeaponLength = 0.35,                               
+        AttachmentType = BigWeapon,
+    }
+
+    item StoneSwordHead
+    {
+        DisplayName = StoneSwordHead,
+        Icon = StoneSwordHeadIcon,
+        Weight = 0.8,
+        Type = Normal,
+        WorldStaticModel = StoneSwordHead,
+    }
+
+    item WoodenSwordHandle
+    {
+        DisplayName = WoodenSwordHandle,
+        Icon = WoodenSwordHandleIcon,
+        Weight = 0.5,
+        Type = Normal,
+        WorldStaticModel = WoodenSwordHandle,
+    }
+
+
+}
