@@ -1,0 +1,12 @@
+module Base
+{
+    fixing Fix StoneSword
+    {
+        Require : StoneSword,
+        Fixer : Woodglue=1; Woodwork=2,
+        Fixer : DuctTape=1,
+        Fixer : Glue=1,
+        Fixer : Scotchtape=2,
+    }
+
+}

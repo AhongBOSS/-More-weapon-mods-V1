@@ -1,0 +1,51 @@
+module Base
+{
+    recipe Craft StoneSwordHead
+    {
+        Stone=1,        
+        Time:30.0,
+        keep [Recipe.GetItemTypes.Screwdriver],
+
+        Result:StoneSwordHead,
+        SkillRequired:Woodwork=1,
+        StopOnWalk:false,
+        Category:Carpentry,
+        Sound:Hammering,
+        AnimNode:Craft,
+        OnGiveXP:Recipe.OnGiveXP.StoneSwordHeadXP,
+    }
+
+    recipe Craft WoodenSwordHandle
+    {
+        Plank=1,
+        Time:30.0,
+        keep [Recipe.GetItemTypes.Saw],
+
+        Result:WoodenSwordHandle,
+        SkillRequired:Woodwork=1,
+        StopOnWalk:false,
+        Category:Carpentry,
+        Sound:Hammering,
+        AnimNode:Craft,
+        OnGiveXP:Recipe.OnGiveXP.WoodenSwordHandleXP,
+    }
+
+
+    recipe make StoneSword
+    {
+        StoneSwordHead=1,
+        WoodenSwordHandle=1,
+        DuctTape=1,
+        Nails=5,
+        keep [Recipe.GetItemTypes.Hammer],
+
+        Result:StoneSword,
+        Time:200.0,
+        SkillRequired:Woodwork=3,
+        StopOnWalk:false,
+        Category:Carpentry,
+        Sound:Hammering,
+        AnimNode:Craft,
+        OnGiveXP:Recipe.OnGiveXP.StoneSwordXP,
+    }
+}

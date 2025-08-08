@@ -1,0 +1,3 @@
+ItemName_TW = {
+    ItemName_Base.StoneSword = "石劍",
+}
